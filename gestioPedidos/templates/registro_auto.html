@@ -1,0 +1,18 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro autos</title>
+</head>
+<body>
+    <h1>registro tu auto y empieza a ganar dinero</h1>
+    <form action="/registro_auto/" method="POST"> {% csrf_token %}
+        <P>MARCA: <input type="text" name="marca" placeholder="marca" maxlength="10"></P>
+        <P>EMAIL: <input type="text" name="email" placeholder="email"></P>
+        <P>Nombre:<input type="text" name="nombre" placeholder="nombre"></P>
+        <input type="submit" name="enviar">
+    </form>
+    
+</body>
+</html>
